@@ -3,7 +3,7 @@
 //2. organizing data
 //3. iterate over that data
 
-// JavaScript: multi-paradigm, high level, interpreted language
+// JavaScript: multi-paradigm, high level, interpreted language, Dynamic language
 
 // Variables
 // Used to reference data
@@ -38,3 +38,28 @@ console.log(b)
 // a = 11
 
 // b stays 25
+
+// VARIABLES ARE NOT EQUAL TO VALUES
+// VARIABLES POINT TOWARDS VALUES
+
+//Value System in JS---------------------------------------------------------------
+
+//Primitives
+  //Number - math calc
+  //String - used for all words
+  //Boolean - true or false (logic)
+  //Null - when you intentionally make a variable POINT to nothing
+  //Undefined - when you want to unintentionally make a variable point to nothing
+  //Symbol
+
+let magicPotion = null //starting a game for example
+magicPotion = 2
+
+let partyDate; //undefined 
+
+//Object
+  //Array - sequence of elements
+  //object - key and value pair
+  //function - bread and butter of js
+  //RegEx - regular expressions
+  //Date 
