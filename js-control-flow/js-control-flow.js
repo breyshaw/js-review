@@ -89,3 +89,40 @@ if(color == 'green') {
 } else {
   console.log('color is not green, blue or red')
 }
+
+//WHEN in doubt, ITERATE
+//LOOPS
+
+//FOR LOOP
+//Start i at 0, it doesn't go higher than 10(condition), i++ increments by one
+//The function runs once at 0, checks if it has met the condition, then increments by one if not met
+for(let i = 0; i < 10; i++){
+  console.log(i)
+}
+
+//PSEUDO CODE!!!
+//if the number is even
+//log out - number is totally even
+//else
+//number is totally odd
+for(let i = 1; i < 21; i++){
+  if(i % 2 === 0){ //if i is divided by two, remainder is 0 (it's even) MODULUS or remainder operator
+    console.log(i, 'is totally even')
+  } else {
+    console.log(i, 'is totally odd')
+  }
+}
+
+//Write a for loop that iterates from 0-50 and logs the numbers
+for(let i = 0; i < 50; i++){
+  console.log(i)
+}
+
+//Write a for loop that iterates from 1-200 and logs out whether each number in the range is even or odd
+for(let i = 0; i < 20; i++){
+  if(i % 2 === 0){
+    console.log(i, 'is even')
+  } else {
+    console.log(i, 'is odd')
+  }
+}
