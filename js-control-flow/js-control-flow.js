@@ -46,31 +46,31 @@ console.log(
 
 // && and operator - always returns the first operand if it is falsy, otherwise the second will be returned - regardless of truthyness or falsyness
 
-console.log( 'party' && 'goodbye')
-console.log( 0 && null)
+console.log('party' && 'goodbye')
+console.log(0 && null)
 
 //BRANCHING STATEMENTS
 
 let val = 6
 //if - open parenthesis - check for truthy
 //single path
-if(val === 1) {
+if (val === 1) {
   console.log('this code will only run if val is 1')
 }
 
 //dual path if....else
-if(val === 1) {
+if (val === 1) {
   console.log('val is 1')
 } else {
   console.log('val is not 1')
 }
 
 //three or more paths if..else if....else
-if(val == 1) {
+if (val == 1) {
   console.log('val is 1')
-} else if(val === 2) {
+} else if (val === 2) {
   console.log('val is 2')
-} else if(val === 3) {
+} else if (val === 3) {
   console.log('val is 3')
 } else {
   console.log('val is not 1,2, or 3')
@@ -80,11 +80,11 @@ if(val == 1) {
 
 let color = 'blue'
 
-if(color == 'green') {
+if (color == 'green') {
   console.log('Boy without a fairy')
-} else if(color === 'blue') {
+} else if (color === 'blue') {
   console.log('GOTTA GO FAST')
-} else if(color === 'red') {
+} else if (color === 'red') {
   console.log('& Knuckles')
 } else {
   console.log('color is not green, blue or red')
@@ -96,7 +96,7 @@ if(color == 'green') {
 //FOR LOOP
 //Start i at 0, it doesn't go higher than 10(condition), i++ increments by one
 //The function runs once at 0, checks if it has met the condition, then increments by one if not met
-for(let i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++) {
   console.log(i)
 }
 
@@ -105,8 +105,8 @@ for(let i = 0; i < 10; i++){
 //log out - number is totally even
 //else
 //number is totally odd
-for(let i = 1; i < 21; i++){
-  if(i % 2 === 0){ //if i is divided by two, remainder is 0 (it's even) MODULUS or remainder operator
+for (let i = 1; i < 21; i++) {
+  if (i % 2 === 0) { //if i is divided by two, remainder is 0 (it's even) MODULUS or remainder operator
     console.log(i, 'is totally even')
   } else {
     console.log(i, 'is totally odd')
@@ -114,15 +114,27 @@ for(let i = 1; i < 21; i++){
 }
 
 //Write a for loop that iterates from 0-50 and logs the numbers
-for(let i = 0; i < 50; i++){
+for (let i = 0; i < 50; i++) {
   console.log(i)
 }
 
-//Write a for loop that iterates from 1-200 and logs out whether each number in the range is even or odd
-for(let i = 0; i < 20; i++){
-  if(i % 2 === 0){
+//Write a for loop that iterates from 1-20 and logs out whether each number in the range is even or odd
+for (let i = 0; i < 20; i++) {
+  if (i % 2 === 0) {
     console.log(i, 'is even')
   } else {
     console.log(i, 'is odd')
   }
 }
+
+//TERNARY OPERATOR
+let score = 85
+// let message;
+// if (score > 100){
+//   message = "You rock"
+// } else {
+//   message = "Keep trying!"
+// }
+
+//Can be rewritten as a one liner
+let message = score > 100 ? console.log("You rock") : console.log("Keep trying!")
