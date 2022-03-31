@@ -48,3 +48,44 @@ console.log(
 
 console.log( 'party' && 'goodbye')
 console.log( 0 && null)
+
+//BRANCHING STATEMENTS
+
+let val = 6
+//if - open parenthesis - check for truthy
+//single path
+if(val === 1) {
+  console.log('this code will only run if val is 1')
+}
+
+//dual path if....else
+if(val === 1) {
+  console.log('val is 1')
+} else {
+  console.log('val is not 1')
+}
+
+//three or more paths if..else if....else
+if(val == 1) {
+  console.log('val is 1')
+} else if(val === 2) {
+  console.log('val is 2')
+} else if(val === 3) {
+  console.log('val is 3')
+} else {
+  console.log('val is not 1,2, or 3')
+}
+
+//Write an if else if else statement that console.logs the following based upon the value of a variable named color
+
+let color = 'blue'
+
+if(color == 'green') {
+  console.log('Boy without a fairy')
+} else if(color === 'blue') {
+  console.log('GOTTA GO FAST')
+} else if(color === 'red') {
+  console.log('& Knuckles')
+} else {
+  console.log('color is not green, blue or red')
+}
