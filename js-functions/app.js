@@ -51,3 +51,6 @@ console.log(addedNums)
 //Add can be rewritten as
 let addArrow = (a , b) => a + b
 console.log(addArrow(4, 5))
+
+//PARAMATERS are the placeholders (defined with the function) where the arguments are passed
+//ARGUMENTS are the specific values we pass through a function when it is actually called
