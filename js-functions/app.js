@@ -48,5 +48,6 @@ function add(a,b) {
 let addedNums = add(3, 4)
 console.log(addedNums)
 
+//Add can be rewritten as
 let addArrow = (a , b) => a + b
 console.log(addArrow(4, 5))
