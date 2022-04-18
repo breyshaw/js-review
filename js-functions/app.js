@@ -1,5 +1,3 @@
-console.log('sanity check')
-
 //Object Oriented Programming
 // Imperative - you re telling the computer how to do things
 
@@ -11,14 +9,12 @@ console.log('sanity check')
 //Functions in JS
 //  First Class citizenship
 //  Data Type: Object
+//  WRITE SMALL FUNCTIONS THAT DO ONE TASK AT A TIME
+//  Reusability
 
-// WRITE SMALL FUNCTIONS THAT DO ONE TASK AT A TIME
-//Reusability
+// 3 Ways to define and write functions
 
-//3 Ways to define and write functions
-
-//1 Function Declaration
-
+// 1. Function Declaration
 function greeting(name) {
   console.log('Hey,', name + '!')
 }
@@ -30,3 +26,27 @@ function greeting2(name) {
 }
 
 console.log(greeting2('Katie'))
+
+// 2. Function Expressions - the function is assigned to a variable
+const sayHi = function(name) {
+  console.log('Hello', name + '!')
+}
+
+sayHi('Dan')
+
+// Difference between function declaration and function expression
+//Syntax
+//Function Declaration - you can invoke the function anywhere in the file - even before the function is defined. 
+//Function Expression - you can only invoke after a function is defined.
+
+// 3. Arrow Functions - ES5/ES6
+
+function add(a,b) {
+  return a + b
+}
+
+let addedNums = add(3, 4)
+console.log(addedNums)
+
+let addArrow = (a , b) => a + b
+console.log(addArrow(4, 5))
