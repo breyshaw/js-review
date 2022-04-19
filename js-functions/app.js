@@ -62,6 +62,12 @@ function computeArea(width, height) {
 }
 console.log(computeArea(5, 25))
 
+//Template literal
+function computeAreaLiteral(width, height) {
+  return `The area of a rectangle with a width of ${width} and a height of ${height} is ${width * height} square units.`
+}
+console.log(computeAreaLiteral(2 ,5))
+
 const planetHasWater = function (planet) {
   if (planet.toLowerCase() === 'earth' || planet.toLowerCase() === 'mars') {
     return true
