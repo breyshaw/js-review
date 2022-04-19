@@ -14,7 +14,7 @@
 
 // 3 Ways to define and write functions
 
-// 1. Function Declaration
+// 1. Function Declaration - can invoke the function anywhere in the file
 function greeting(name) {
   console.log('Hey,', name + '!')
 }
@@ -27,8 +27,8 @@ function greeting2(name) {
 
 console.log(greeting2('Katie'))
 
-// 2. Function Expressions - the function is assigned to a variable
-const sayHi = function(name) {
+// 2. Function Expressions - the function is assigned to a variable - must be invoked after the function
+const sayHi = function (name) {
   console.log('Hello', name + '!')
 }
 
@@ -41,7 +41,7 @@ sayHi('Dan')
 
 // 3. Arrow Functions - ES5/ES6
 
-function add(a,b) {
+function add(a, b) {
   return a + b
 }
 
@@ -49,8 +49,26 @@ let addedNums = add(3, 4)
 console.log(addedNums)
 
 //Add can be rewritten as
-let addArrow = (a , b) => a + b
+let addArrow = (a, b) => a + b
 console.log(addArrow(4, 5))
 
-//PARAMATERS are the placeholders (defined with the function) where the arguments are passed
+//PARAMETERS are the placeholders (defined with the function) where the arguments are passed
 //ARGUMENTS are the specific values we pass through a function when it is actually called
+
+//Function REPS
+
+function computeArea(width, height) {
+  return ('The area of a rectangle with a width of ' + width + ' and a height of ' + height + ' is ' + (width * height) + ' square units.')
+}
+console.log(computeArea(5, 25))
+
+const planetHasWater = function (planet) {
+  if (planet.toLowerCase() === 'earth' || planet.toLowerCase() === 'mars') {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(planetHasWater('EARTH'))
+console.log(planetHasWater('mArS'))
+console.log(planetHasWater('Venus'))
