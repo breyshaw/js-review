@@ -98,3 +98,12 @@ console.log(
   marry2('Thot', 'Hagar', 'Nancy', 'Karen')
 )
 
+const pets = ['Bandit','Opie','Marley']
+//Write a function that makes all the pet names uppercase
+
+function upperCasePets(arr) {
+arr.forEach(pet => {
+  console.log(pet.toUpperCase())
+});
+}
+upperCasePets(pets)
