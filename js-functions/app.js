@@ -107,3 +107,23 @@ arr.forEach(pet => {
 });
 }
 upperCasePets(pets)
+
+//Keywords
+/**
+ * Variables
+ * Values
+ * Operator
+ * function
+ * Datatype
+ * OOP (object oriented programming)
+ * Function Declaration
+ * Function Expression
+ * Arrow Functions
+ * Parameters and Arguments
+ * Ivoke
+ * Rest Parameter
+ * Methods
+ * Arrays
+ * Objects
+ * Iteration
+ */
