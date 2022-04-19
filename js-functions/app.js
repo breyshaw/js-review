@@ -66,7 +66,7 @@ console.log(computeArea(5, 25))
 function computeAreaLiteral(width, height) {
   return `The area of a rectangle with a width of ${width} and a height of ${height} is ${width * height} square units.`
 }
-console.log(computeAreaLiteral(2 ,5))
+console.log(computeAreaLiteral(2, 5))
 
 const planetHasWater = function (planet) {
   if (planet.toLowerCase() === 'earth' || planet.toLowerCase() === 'mars') {
@@ -78,3 +78,23 @@ const planetHasWater = function (planet) {
 console.log(planetHasWater('EARTH'))
 console.log(planetHasWater('mArS'))
 console.log(planetHasWater('Venus'))
+
+//When you have many arguements (and don't know the number), you can use the rest parameter
+//function takeManyArguments(...array)
+
+//Inherently when you pass multiple parameters, the function thinks of them as an array
+function marry(person1, person2) {
+  console.log(arguments[0])
+  return `${person1} is now married to ${person2}`
+}
+console.log(marry('Helena', 'Hermes'))
+
+//Rest Parameter using args
+function marry2(...args) {
+  console.log('these are my arguements', args)
+  return `${args[0]} is now married to ${args[1]} and they are having a dope party with ${args[2]} and ${args[3]}`
+}
+console.log(
+  marry2('Thot', 'Hagar', 'Nancy', 'Karen')
+)
+
