@@ -68,7 +68,28 @@ console.log(game.biggestNum)
 // Delete (not encouraged at all)
 // delete game.biggestNum
 
+
+//Iteration tools for objects ---------------------------------------
+
+// for... in loop
+for (let key in game) {
+  console.log(`The value of the ${key} property is ${game[key]}`)
+}
+
 console.log(game)
+
+// ES2017 new methods were introduced
+
+Object.keys(game).forEach(function (key) {
+  console.log(key)
+})
+
+Object.values(game).forEach((value) => console.log(value))
+
+Object.entries(game).forEach((entry) => console.log(entry))
+
+
+//---------------------------------------------------------------
 
 const adventurer = {
   name: 'Link',
@@ -88,15 +109,15 @@ const adventurer = {
 //Link needs to defend himself!!
 console.log(adventurer.items[2])
 
-//Link needs to make Navi shutup! Access Navi
+//Link needs to make Navi shutup! Access Navi!
 console.log(adventurer.companion)
 
-//Link needs to kill the parasite on Navi
+//Link needs to kill the parasite on Navi!
 delete adventurer.companion.companion
 
 console.log(adventurer.companion)
 
 //Access all of Link's items
-for(let i = 0; i < adventurer.items.length; i++) {
+for (let i = 0; i < adventurer.items.length; i++) {
   console.log(adventurer.items[i])
 }
