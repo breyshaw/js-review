@@ -51,14 +51,26 @@ const game = {
   title: 'Guess the number',
   biggestNum: 100,
   smallestNum: 0,
+  numGuesses: 0,
+  secretNum: null,
+  play: function () {
+    this.secretNum = Math.floor(Math.random() * (this.biggestNum - this.smallestNum + 1)) +
+      this.smallestNum
+    return this.secretNum
+  }
 }
+
+//'this' - refers to the parent object
+//'this' - is the object that the function is a property of
+
+console.log(game.play())
 
 // Adding to object from outside of object {} using dot notation
 // game.party = 'At Shahzad house' 
 //this is kind of risky though in big code
 
-console.log(game.title)
-console.log(game.biggestNum)
+// console.log(game.title)
+// console.log(game.biggestNum)
 
 // Square bracket notation
 // game['smallestNum'] = 0
@@ -72,21 +84,21 @@ console.log(game.biggestNum)
 //Iteration tools for objects ---------------------------------------
 
 // for... in loop
-for (let key in game) {
-  console.log(`The value of the ${key} property is ${game[key]}`)
-}
+// for (let key in game) {
+//   console.log(`The value of the ${key} property is ${game[key]}`)
+// }
 
-console.log(game)
+// console.log(game)
 
 // ES2017 new methods were introduced
 
-Object.keys(game).forEach(function (key) {
-  console.log(key)
-})
+// Object.keys(game).forEach(function (key) {
+//   console.log(key)
+// })
 
-Object.values(game).forEach((value) => console.log(value))
+// Object.values(game).forEach((value) => console.log(value))
 
-Object.entries(game).forEach((entry) => console.log(entry))
+// Object.entries(game).forEach((entry) => console.log(entry))
 
 
 //---------------------------------------------------------------
